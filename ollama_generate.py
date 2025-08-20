@@ -18,7 +18,7 @@ def generate_code(prompt, model="llama3:latest"):
             data = json.loads(chunk.decode("utf-8"))
             if "response" in data:
                 part = data["response"]
-                print(part, end="", flush=True)  # ✅ live stream output
+                print(part, end="", flush=True)  
                 code += part
         except Exception as e:
             print("Error decoding:", e, chunk)
@@ -31,4 +31,4 @@ if __name__ == "__main__":
     code = generate_code(prompt)
     with open("tic_tac_toe.py", "w") as f:
         f.write(code)
-    print("\n\n✅ Code generated and saved to tic_tac_toe.py")
+    print("Code generated successfully")
