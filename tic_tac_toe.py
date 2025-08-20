@@ -1,8 +1,3 @@
-Here is a simple implementation of Tic Tac Toe in Python:
-
-```Python
-# Tic Tac Toe game in Python
-
 board = [' ' for _ in range(9)] # We will use a single list to represent the 3x3 board
 
 def print_board():
