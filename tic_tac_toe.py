@@ -1,4 +1,5 @@
-board = [' ' for _ in range(9)] # We will use a single list to represent the 3x3 board
+
+board = [' ' for _ in range(9)] #list for board representation
 
 def print_board():
     row1 = '| {} | {} | {} |'.format(board[0], board[1], board[2])
